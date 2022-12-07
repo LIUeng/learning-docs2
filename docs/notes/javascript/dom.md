@@ -65,7 +65,7 @@ root.__proto__.__proto__ => HTMLElement
 文档结构发生变化时，它们会随时更新（减少访问的次数）
 :::
 
-<img src="/docs-page/assets/images/dom.png" alt="DOM图" />
+<img src="/assets/images/dom.png" alt="DOM图" />
 
 **DOM API**
 
@@ -182,11 +182,11 @@ myDiv.getComputedStyle(); // 返回所有的样式 行内样式 内联样式
   -  offsetLeft:元素的左外边框至包含元素的左内边框之间的像素距离。
   -  offsetTop:元素的上外边框至包含元素的上内边框之间的像素距离。
 
-<img src="/docs-page/assets/images/tblr.png" alt="偏移量图" />
+<img src="/assets/images/tblr.png" alt="偏移量图" />
 
 - 客户区大小
 
-<img src="/docs-page/assets/images/clientBS.png" alt="客户区大小图" />
+<img src="/assets/images/clientBS.png" alt="客户区大小图" />
 
 - 滚动大小
   -  scrollHeight:在没有滚动条的情况下，元素内容的总高度。
@@ -194,7 +194,7 @@ myDiv.getComputedStyle(); // 返回所有的样式 行内样式 内联样式
   -  scrollLeft:被隐藏在内容区域左侧的像素数。通过设置这个属性可以改变元素的滚动位置。
   -  scrollTop:被隐藏在内容区域上方的像素数。通过设置这个属性可以改变元素的滚动位置。
 
-<img src="/docs-page/assets/images/scrollBS.png" alt="滚动大小图">
+<img src="/assets/images/scrollBS.png" alt="滚动大小图">
 
 ::: warning 混杂模式
 对于运行在混杂模式下的 IE，则需要用 document.body 代替 document.documentElement

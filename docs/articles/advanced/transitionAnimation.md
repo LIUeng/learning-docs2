@@ -8,11 +8,11 @@
 
 **浏览器工作原理**
 
-<img src="/docs-page/assets/images/browser-work.png" alt="浏览器工作原理图"/>
+<img src="/assets/images/browser-work.png" alt="浏览器工作原理图"/>
 
 **浏览器用户界面**
 
-<img src="/docs-page/assets/images/user-interface.png" alt="user interface"/>
+<img src="/assets/images/user-interface.png" alt="user interface"/>
 
 - 重绘
   `外观发生变化，元素可见性，不会改变布局`

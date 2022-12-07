@@ -132,13 +132,13 @@
 
 ⌚️执行栈中所有同步任务执行完毕，js引擎线程空闲，系统会读取
 
-<img src="/docs-page/assets/images/001.png" />
+<img src="/assets/images/001.png" />
 
 👌宏任务 --> 事件队列（循环）
 
 👌微任务 --> 微任务队列
 
-<img src="/docs-page/assets/images/002.png" />
+<img src="/assets/images/002.png" />
 
 `宏任务完成立即执行当前一轮的微任务`
 
@@ -152,4 +152,4 @@
 
   😯 渲染完毕后，js线程继续接管，开始下一个宏任务（事件队列）
 
-<img src="/docs-page/assets/images/003.png" />
+<img src="/assets/images/003.png" />

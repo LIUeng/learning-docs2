@@ -7,7 +7,7 @@
 
 ## 兼容性
 
-<img src="/docs-page/assets/images/mutationObserver.png" alt="mutaion observer browser compatible" />
+<img src="/assets/images/mutationObserver.png" alt="mutaion observer browser compatible" />
 
 ## 用法
 

@@ -43,9 +43,9 @@ btn.onclick = function onclick() {
 
 ## Clipboard API
 
-```warning 注意
+::: warning 注意
 一些浏览器在不安全模式下，访问不到有关安全的 API，如 HTTP 域名下访问不到 ClipboardItem，可以使用 window.isSecureContext 进行查看（localhost 回环地址除外）是否可以访问
-```
+:::
 
 > 兼容性
 
@@ -70,9 +70,9 @@ chrome58+ Edge12+ Firefox4+ Opera45+ Safari10.1+
 
 - getType 返回一个 Promise resolve 态的 blob 对象类型
 
-```warning 注意
+::: warning 注意
 Clipboard 相关的 API 必须在一个文档事件（I/O）内触发，单独使用无效，相关的读取权限操作可以查看 window.Permissions API
-```
+:::
 
 [window.Permissions](https://developer.mozilla.org/en-US/docs/Web/API/Permissions_API)
 

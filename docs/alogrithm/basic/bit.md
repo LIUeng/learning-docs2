@@ -10,4 +10,4 @@
 
 ## 复杂的位运算操作
 
-<img src="/docs-page/assets/images/bit_complex.jpg" alt="复杂的位运算操作图" />
+<img src="/assets/images/bit_complex.jpg" alt="复杂的位运算操作图" />

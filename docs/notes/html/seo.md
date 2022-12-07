@@ -105,4 +105,4 @@ world
 
 ## 其他
 
-<img src="/docs-page/assets/images/otherseo.jpg" alt="其它HTML语义化标签" />
+<img src="/assets/images/otherseo.jpg" alt="其它HTML语义化标签" />

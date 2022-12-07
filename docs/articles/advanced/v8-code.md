@@ -2,7 +2,7 @@
 
 ## 解释器和执行器
 
-<img src="/docs-page/assets/images/compiler.jpg" alt="解释器和执行器" />
+<img src="/assets/images/compiler.jpg" alt="解释器和执行器" />
 
 - 在编译型语言的编译过程中，编译器首先会依次对源代码进行词法分析、语法分析，生成抽象语法树（AST），然后是优化代码，最后再生成处理器能够理解的机器码。如果编译成功，将会生成一个可执行的文件。但如果编译过程发生了语法或者其他的错误，那么编译器就会抛出异常，最后的二进制文件也不会生成成功
 
@@ -10,7 +10,7 @@
 
 ## V8 执行代码
 
-<img src="/docs-page/assets/images/v8-code.jpg" alt="v8 执行代码" />
+<img src="/assets/images/v8-code.jpg" alt="v8 执行代码" />
 
 ### 生成抽象语法树和执行上下文
 

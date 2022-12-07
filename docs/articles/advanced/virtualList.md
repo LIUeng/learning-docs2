@@ -1,6 +1,6 @@
 # PC虚拟列表如何处理
 
-<img src="/docs-page/assets/images/001.png" />
+<img src="/assets/images/001.png" />
 
 `针对场景`
 
