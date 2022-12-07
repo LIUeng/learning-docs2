@@ -1,0 +1,1 @@
+import{_ as s,c as n,o as a,a as l}from"./app.6c26ea93.js";const i=JSON.parse('{"title":"Context","description":"","frontmatter":{},"headers":[],"relativePath":"source-code/react/api/context.md"}'),p={name:"source-code/react/api/context.md"},o=l("",7),e=[o];function t(c,r,D,F,y,C){return a(),n("div",null,e)}const d=s(p,[["render",t]]);export{i as __pageData,d as default};
