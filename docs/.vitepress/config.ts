@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress';
 
 export default defineConfig({
-  base: '/docs-page/',
+  base: '/learning-docs2/',
   head: [['link', { rel: 'icon', href: '/logo.ico' }]],
   title: 'LEARNING DOCS',
   description: 'Learning Docs by LIUeng',
