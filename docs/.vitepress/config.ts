@@ -245,6 +245,10 @@ export default defineConfig({
           text: '面试指南',
           items: [{ text: '写在前面', link: '/interview/' }],
         },
+        {
+          text: '面试相关',
+          items: [{ text: '浏览器渲染流水线', link: '/interview/browser' }],
+        },
       ],
       '/editor/': [
         {
