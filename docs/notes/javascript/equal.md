@@ -32,5 +32,3 @@ a == b // false
 a <= b // true
 a >= b // true
 ```
-
-THE END

@@ -2,12 +2,12 @@ import { defineConfig } from 'vitepress';
 
 export default defineConfig({
   base: '/learning-docs2/',
-  head: [['link', { rel: 'icon', href: '/logo.ico' }]],
+  head: [['link', { rel: 'icon', href: '/learning-docs2/logo.ico' }]],
   title: 'LEARNING DOCS',
   description: 'Learning Docs by LIUeng',
   themeConfig: {
     nav: [
-      { text: '笔记', link: '/notes/' },
+      { text: '基础', link: '/notes/' },
       { text: '文章', link: '/articles/' },
       { text: '网络', link: '/network/' },
       { text: '算法', link: '/alogrithm/' },
@@ -118,7 +118,7 @@ export default defineConfig({
             { text: 'IEEE 标准', link: '/articles/basic/ieee' },
             { text: '模块化演变', link: '/articles/basic/module' },
             { text: 'Script 标签', link: '/articles/basic/script_link' },
-            { text: '系统链接', link: '/articles/basic/syslink' },
+            { text: 'Soft/Hard Links', link: '/articles/basic/syslink' },
           ],
         },
         {
@@ -138,7 +138,7 @@ export default defineConfig({
         {
           text: '服务器型',
           collapsible: true,
-          items: [{ text: '防抖节流', link: '/articles/servers/ecs' }],
+          items: [{ text: 'ECS', link: '/articles/servers/ecs' }],
         },
         {
           text: '问题型',
@@ -247,7 +247,13 @@ export default defineConfig({
         },
         {
           text: '面试相关',
-          items: [{ text: '浏览器渲染流水线', link: '/interview/browser' }],
+          items: [
+            { text: '浏览器渲染流水线', link: '/interview/browser' },
+            {
+              text: '性能指标',
+              link: '/interview/metrics',
+            },
+          ],
         },
       ],
       '/editor/': [
