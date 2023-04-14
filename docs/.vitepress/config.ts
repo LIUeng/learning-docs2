@@ -186,6 +186,7 @@ export default defineConfig({
           items: [
             { text: '大(O)表示法', link: '/alogrithm/basic/O' },
             { text: '位运算', link: '/alogrithm/basic/bit' },
+            { text: '红黑树', link: '/alogrithm/basic/red_black_tree' },
           ],
         },
         {
