@@ -192,7 +192,9 @@ export default defineConfig({
         {
           text: '面试算法',
           collapsible: true,
-          items: [],
+          items: [
+            { text: '数据结构辅助记忆', link: '/alogrithm/interview/self' },
+          ],
         },
       ],
       '/source-code/': [
