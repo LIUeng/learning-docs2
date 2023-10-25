@@ -256,6 +256,10 @@ export default defineConfig({
               text: '性能指标',
               link: '/interview/metrics',
             },
+            {
+              text: '关键路径渲染 CRP',
+              link: '/interview/crp'
+            },
           ],
         },
       ],
