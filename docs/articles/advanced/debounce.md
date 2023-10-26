@@ -10,9 +10,9 @@
 
 > 每次输入完毕，两秒之后执行
 
-#### 演示
+<!-- #### 演示 -->
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/217374a2074b48118a4dcd72a5c781f7~tplv-k3u1fbpfcp-watermark.image)
+<!-- ![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/217374a2074b48118a4dcd72a5c781f7~tplv-k3u1fbpfcp-watermark.image) -->
 
 #### 代码实现
 
@@ -42,9 +42,9 @@ _.debounce(fn, wait, {
 > 1. 输入直接执行
 > 2. 两秒之后，再次触发执行
 
-#### 演示
+<!-- #### 演示 -->
 
-![](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b6c4e3aa3051409499e2547e23c3b15a~tplv-k3u1fbpfcp-watermark.image)
+<!-- ![](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b6c4e3aa3051409499e2547e23c3b15a~tplv-k3u1fbpfcp-watermark.image) -->
 
 #### 代码执行
 
@@ -79,9 +79,9 @@ function immediate_debounceI(fn, delay = 2000) {
 > 1. 输入立即执行
 > 2. 一直触发事件大于定时时间，最后定时器再执行一次
 
-#### 演示
+<!-- #### 演示
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2f45d3716dbb40698664ce19f4daf2ad~tplv-k3u1fbpfcp-watermark.image)
+![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2f45d3716dbb40698664ce19f4daf2ad~tplv-k3u1fbpfcp-watermark.image) -->
 
 #### 代码实现
 
@@ -131,9 +131,9 @@ _.debounce(fn, wait, {
 > 1. 立即执行
 > 2. 一直触发事件大于设置的时间，立即执行
 
-#### 演示
+<!-- #### 演示
 
-![](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a5163458769040b59340fe5fcd9801bf~tplv-k3u1fbpfcp-watermark.image)
+![](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a5163458769040b59340fe5fcd9801bf~tplv-k3u1fbpfcp-watermark.image) -->
 
 #### 代码实现
 
@@ -172,9 +172,9 @@ _.throttle(fn, wait, {
 > 1. 立即执行
 > 2. 一直触发事件大于设置的时间，立即执行
 
-#### 演示
+<!-- #### 演示
 
-同上
+同上 -->
 
 #### 代码实现
 
@@ -208,9 +208,9 @@ function throttle_timeout(fn, delay = 1000) {
 > 2. 一直触发事件大于设置的时间，立即执行
 > 3. 一直触发事件未大于设置的时间，再执行一次
 
-#### 演示
+<!-- #### 演示
 
-![](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c2797271594a4a8399fcea7d49180663~tplv-k3u1fbpfcp-watermark.image)
+![](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c2797271594a4a8399fcea7d49180663~tplv-k3u1fbpfcp-watermark.image) -->
 
 #### 代码实现
 

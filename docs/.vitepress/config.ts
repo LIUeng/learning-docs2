@@ -31,7 +31,7 @@ export default defineConfig({
         },
         {
           text: 'HTML',
-          collapsible: true,
+          collapsed: true,
           items: [
             { text: 'SEO', link: '/notes/html/seo' },
             { text: 'ES Module', link: '/notes/html/esmodule' },
@@ -40,7 +40,7 @@ export default defineConfig({
         },
         {
           text: 'CSS',
-          collapsible: true,
+          collapsed: true,
           items: [
             { text: 'CSS 知识', link: '/notes/css/' },
             { text: 'BFC', link: '/notes/css/bfc' },
@@ -56,7 +56,7 @@ export default defineConfig({
         },
         {
           text: 'JavaScript',
-          collapsible: true,
+          collapsed: true,
           items: [
             { text: '事件监听', link: '/notes/javascript/addEventListener' },
             { text: 'DOM 类型', link: '/notes/javascript/dom' },
@@ -73,7 +73,7 @@ export default defineConfig({
         },
         {
           text: '正则表达式',
-          collapsible: true,
+          collapsed: true,
           items: [
             { text: '基础', link: '/notes/regexp/base' },
             { text: '扩展', link: '/notes/regexp/unknown' },
@@ -81,12 +81,12 @@ export default defineConfig({
         },
         {
           text: 'ES Features',
-          collapsible: true,
+          collapsed: true,
           items: [{ text: 'ES6+', link: '/notes/es/es6' }],
         },
         {
           text: 'NodeJS',
-          collapsible: true,
+          collapsed: true,
           items: [
             { text: 'ANSI', link: '/notes/nodejs/ansi' },
             { text: '事件循环', link: '/notes/nodejs/event-loop' },
@@ -95,7 +95,7 @@ export default defineConfig({
         },
         {
           text: 'TypeScript',
-          collapsible: true,
+          collapsed: true,
           items: [
             { text: '基础', link: '/notes/typescript/basic' },
             { text: '高级基础', link: '/notes/typescript/advanced' },
@@ -107,7 +107,7 @@ export default defineConfig({
         { text: '文章', items: [{ text: '阅读前瞻', link: '/articles/' }] },
         {
           text: '基础型',
-          collapsible: true,
+          collapsed: true,
           items: [
             { text: '复制粘贴', link: '/articles/basic/clipboard' },
             { text: '颜色转换', link: '/articles/basic/color_convert' },
@@ -123,7 +123,7 @@ export default defineConfig({
         },
         {
           text: '进阶型',
-          collapsible: true,
+          collapsed: true,
           items: [
             { text: '防抖节流', link: '/articles/advanced/debounce' },
             { text: '热重载', link: '/articles/advanced/devServer' },
@@ -137,12 +137,12 @@ export default defineConfig({
         },
         {
           text: '服务器型',
-          collapsible: true,
+          collapsed: true,
           items: [{ text: 'ECS', link: '/articles/servers/ecs' }],
         },
         {
           text: '问题型',
-          collapsible: true,
+          collapsed: true,
           items: [
             { text: 'Css 问题', link: '/articles/problem/css' },
             { text: 'Yarn 问题', link: '/articles/problem/yarn' },
@@ -156,7 +156,7 @@ export default defineConfig({
         },
         {
           text: '网络相关',
-          collapsible: true,
+          collapsed: true,
           items: [
             { text: 'Cookie', link: '/network/cookie' },
             { text: 'Cors', link: '/network/cors' },
@@ -182,7 +182,7 @@ export default defineConfig({
         },
         {
           text: '基础',
-          collapsible: true,
+          collapsed: true,
           items: [
             { text: '大(O)表示法', link: '/alogrithm/basic/O' },
             { text: '位运算', link: '/alogrithm/basic/bit' },
@@ -191,10 +191,8 @@ export default defineConfig({
         },
         {
           text: '面试算法',
-          collapsible: true,
-          items: [
-            { text: '数据结构辅助记忆', link: '/alogrithm/interview/self' },
-          ],
+          collapsed: true,
+          items: [{ text: '数据结构辅助记忆', link: '/alogrithm/interview/self' }],
         },
       ],
       '/source-code/': [
@@ -204,7 +202,7 @@ export default defineConfig({
         },
         {
           text: 'React',
-          collapsible: true,
+          collapsed: true,
           items: [
             {
               text: 'API',
@@ -217,7 +215,7 @@ export default defineConfig({
         },
         {
           text: 'Vue',
-          collapsible: true,
+          collapsed: true,
           items: [],
         },
       ],
@@ -228,7 +226,7 @@ export default defineConfig({
         },
         {
           text: '业界标准',
-          collapsible: true,
+          collapsed: true,
           items: [
             { text: '标准 - 模板1', link: '/architecture/standard/A-YZ' },
             { text: '组件化与模块化', link: '/architecture/standard/comp-mod' },
@@ -239,7 +237,7 @@ export default defineConfig({
         },
         {
           text: '网页安全',
-          collapsible: true,
+          collapsed: true,
           items: [{ text: 'XSS', link: '/architecture/websecure/xss' }],
         },
       ],
@@ -258,7 +256,7 @@ export default defineConfig({
             },
             {
               text: '关键路径渲染 CRP',
-              link: '/interview/crp'
+              link: '/interview/crp',
             },
           ],
         },
@@ -270,7 +268,7 @@ export default defineConfig({
         },
         {
           text: 'Markdown',
-          collapsible: true,
+          collapsed: true,
           items: [{ text: 'Vue/VitePress', link: '/editor/markdown/vuepress' }],
         },
       ],
@@ -279,5 +277,9 @@ export default defineConfig({
       message: 'Released under the MIT License.',
       copyright: 'Copyright © 2019-present LIUeng',
     },
+    search: {
+      provider: 'local',
+    },
   },
+  lastUpdated: true,
 });
