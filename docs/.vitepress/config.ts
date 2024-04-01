@@ -14,10 +14,6 @@ export default defineConfig({
       {
         text: '源码',
         link: '/source-code/',
-        // items: [
-        //   { text: 'React', link: '/source-code/' },
-        //   { text: 'Vue', link: '/source-code/' },
-        // ],
       },
       { text: '架构', link: '/architecture/' },
       { text: '面试', link: '/interview/' },
@@ -27,7 +23,7 @@ export default defineConfig({
       '/notes/': [
         {
           text: '笔记',
-          items: [{ text: '阅读前瞻', link: '/notes/' }],
+          items: [{ text: 'README.md', link: '/notes/' }],
         },
         {
           text: 'HTML',
@@ -196,16 +192,18 @@ export default defineConfig({
         },
       ],
       '/source-code/': [
-        {
-          text: '导航',
-          items: [{ text: '目录', link: '/source-code/' }],
-        },
+        // {
+        //   text: '导航',
+        //   // items: [{ text: '目录', link: '/source-code/' }],
+        // },
         {
           text: 'React',
           collapsed: true,
           items: [
+            { text: 'Before Read', link: '/source-code/vue/' },
             {
               text: 'API',
+              collapsed: true,
               items: [
                 { text: 'Context', link: '/source-code/react/api/context' },
                 { text: 'Ref', link: '/source-code/react/api/ref' },
@@ -216,7 +214,7 @@ export default defineConfig({
         {
           text: 'Vue',
           collapsed: true,
-          items: [],
+          items: [{ text: 'Before Read', link: '/source-code/vue/' }],
         },
       ],
       '/architecture/': [
