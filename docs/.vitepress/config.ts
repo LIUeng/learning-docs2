@@ -200,7 +200,7 @@ export default defineConfig({
           text: 'React',
           collapsed: true,
           items: [
-            { text: 'Before Read', link: '/source-code/vue/' },
+            { text: 'Before Read', link: '/source-code/react/' },
             {
               text: 'API',
               collapsed: true,
