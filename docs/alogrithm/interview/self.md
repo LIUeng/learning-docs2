@@ -2,9 +2,7 @@
 
 > 适合自己的数据结构与算法的记忆方法
 
-## 常见的数据结构
-
-### 堆
+## 堆
 
 小顶堆 大顶堆
 
@@ -17,7 +15,7 @@
 - 删除
   - 删除的元素（相同的元素）
   - 最后一个元素替换删除元素
-  - 重新建堆
+  - 重新建堆（判断左节点）
     - 没有左节点 自下向顶
     - 有左节点且（没有父节点或者当前删除的节点与父节点比较）自顶向下
 - 实例方法
@@ -38,7 +36,7 @@ class Heap {
 }
 ```
 
-### Hash 表
+## Hash 表
 
 - 设计 hash 算法
   - 大小
@@ -61,7 +59,7 @@ class HashTable {
 }
 ```
 
-### 字典树
+## 字典树
 
 Trie
 
@@ -75,7 +73,7 @@ Trie
   - children --- HashTable
   - isCompleteWord
 
-### 图
+## 图
 
 Graph
 
@@ -88,7 +86,7 @@ Graph
   - 开始顶点
   - 结束顶点
 
-#### 探测环
+### 探测环
 
 > 无向图探测
 
@@ -110,13 +108,13 @@ Graph
   - !black[next]
 - 存在 gray set 访问过的节点即存在环
 
-### Disjoin Set
+## Disjoin Set
 
 交并集
 
 - 检测图是否存在环
 
-### 链表
+## 链表
 
 - prepend
 - append
@@ -130,18 +128,21 @@ Graph
 - toString
 - reverse
 
-#### 链表倒转
+### 链表倒转
 
-前后变量法
+前后变量法（单/双向链表）
 
 ```js
 let nextNode = null;
 let prevNode = null;
 while (currNode) {
+  // 记住下一个节点
   nextNode = currNode.next;
 
+  // 当前 next 节点指向前一个节点
   currNode.next = prevNode;
   // doubly linked node if
+  // 当前 prev 节点指向下一个节点
   currNode.prev = nextNode;
 
   prevNode = currNode;
@@ -149,7 +150,7 @@ while (currNode) {
 }
 ```
 
-### 树
+## 树
 
 二叉树
 
@@ -179,7 +180,7 @@ while (currNode) {
   - traverseInOrder
   - toString
 
-#### 注意点
+### 注意点
 
 - 删除节点
   - 存在左右节点
