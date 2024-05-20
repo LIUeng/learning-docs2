@@ -43,19 +43,17 @@ function bar() {
 foo(); // ReferenceError: a is not defined
 ```
 
-## this 全面解析
-
-### 调用位置
+## 调用位置
 
 > this 是在调用时绑定的，取决于函数在哪调用（函数被调用的位置）
 
 `分析调用栈（到达当前执行位置所调用的所有函数）`
 
-### 绑定规则
+## 绑定规则
 
-?调用位置如何决定 this 的绑定对象
+调用位置如何决定 this 的绑定对象
 
-#### 默认绑定
+### 默认绑定
 
 - 严格模式与 foo()的调用位置无关
 
@@ -77,7 +75,7 @@ var a = 1;
 foo(); // a = 1; this 绑定的是全局对象 window
 ```
 
-#### 隐式绑定
+### 隐式绑定
 
 ```js
 function foo() {
@@ -104,7 +102,7 @@ var a = 'i am world';
 world(); // i am world
 ```
 
-#### 显式绑定
+### 显式绑定
 
 > JavaScript 提供的大多数函数以及自己创建的函数都能通过 apply call 来进行显式绑定
 
@@ -125,7 +123,7 @@ hello.call(obj); // hello 一旦绑定为 obj 对象，就无法绑定其他 thi
 hell.call(window); // 无效
 ```
 
-#### new 绑定
+### new 绑定
 
 > 在 JavaScript 中，构造函数只是一些用 new 关键字时被调用的函数（被 new 调用的普通函数）
 
@@ -136,13 +134,26 @@ hell.call(window); // 无效
 - 新对象会绑定到函数调用的 this
 - 如果函数没有返回其他对象，即返回这个新对象
 
-### 绑定优先级
+```js
+// new 的手动实现
+function newObject(func, ...args) {
+  var _this = {};
+
+  Object.setPrototypeOf(_this, func.prototype);
+  var o = func.apply(_this, args);
+  
+  // null 情况下也是返回实例化的对象
+  return o !== null && typeof o === 'object' ? o : _this;
+}
+```
+
+## 绑定优先级
 
 - 显式绑定 > 隐式绑定 > 默认绑定
 - new 绑定 > 隐式绑定
 - new 绑定和显式绑定无法判定
 
-#### bind
+### bind
 
 > new 绑定和显式绑定分析
 
@@ -183,9 +194,9 @@ if (!Function.prototype.bind) {
 }
 ```
 
-### 注意点
+## 注意点
 
-#### 忽略的 this
+### 忽略的 this
 
 > 如果绑定的对象为 null、undefine 时，应用的是默认绑定
 
@@ -195,7 +206,7 @@ if (!Function.prototype.bind) {
 可以创建一个 DMZ（demilitarized zone 非军事区）对象 --- 空的非委托的对象
 :::
 
-#### 间接引用
+### 间接引用
 
 间接引用采用的是默认绑定
 
@@ -207,7 +218,7 @@ var objb = { a: 3, foo: foo };
 (obja.foo = objb.foo)(); // 输出 1
 ```
 
-#### 软绑定
+### 软绑定
 
 > 默认绑定指定一个全局对象和 undefined 以外的值，可以实现和硬绑定相同的效果；同时保留隐式绑定或显示绑定修改 this 的能力
 
@@ -228,7 +239,7 @@ if (!Function.prototype.softBind) {
 }
 ```
 
-### es6 箭头函数
+## es6 箭头函数
 
 - 不适用以上绑定方式（无效）
 - 箭头函数会继承外层函数调用的 this 绑定（外层函数或全局作用域）
